@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fishcards</title>
+<link rel="icon" type="image/x-icon" href="https://styleguide.brainly.com/images/favicons/brainly/favicon-0c2222f36b.ico">
+<link rel="icon" sizes="192x192" href="https://styleguide.brainly.com/images/favicons/brainly/favicon-hd-0865c7f19f.png">
+<meta name="theme-color" content="#fbe4b5" />
+<link rel="stylesheet" href="https://styleguide.brainly.com/134.2.1/style-guide.css">
+<link rel="stylesheet" href="assets/main.min.css">
+<script defer src="assets/bundle.min.js"></script>
+
+<div class="layout">
+  <header class="sg-header">
+    <div class="sg-header__container sg-header__container--light">
+      <div class="sg-header__content">
+        <div class="sg-header__left">
+          <a href="#" class="js-restart sg-home-button" title="Restart">
+            <img class="sg-home-button__logo-small" src="https://styleguide.brainly.com/images/logos/brainly-mobile-426ef8718f.svg">
+            <img class="sg-home-button__logo-big" src="https://styleguide.brainly.com/images/logos/brainly-761d75d6ea.svg">
+          </a>
+          <div class="sg-vertical-separator sg-vertical-separator--large"></div>
+        </div>
+        <div class="sg-header__middle">
+          <h1 class="sg-text-bit sg-text-bit--small sg-text-bit--dark sg-text-bit--not-responsive">Flashcards</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="flashcards">
+    <div class="flashcards__container flashcards__container--intro">
+      @@include('./parts/intro.html')
+      @@include('./parts/cards.html')
+      @@include('./parts/results.html')
+    </div>
+  </main>
+
+  <footer class="sg-footer">
+    <div class="sg-footer__container">
+      <div class="sg-text sg-text--obscure sg-text--light sg-text--emphasised sg-text--to-center">Made on Earth by <a href="https://pwojnicz.pl" class="sg-link sg-link--light">Paweł Wojnicz</a></div>
+    </div>
+  </footer>
+</div>
+
+<script src="https://styleguide.brainly.com/images/icons-1b40deaa8d.js"></script>

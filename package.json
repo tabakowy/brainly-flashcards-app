@@ -1,0 +1,30 @@
+{
+  "name": "brainly-flashcards-app",
+  "version": "1.0.0",
+  "description": "Singlepage flashcards webapp.",
+  "main": "index.html",
+  "author": "Paweł Wojnicz <hello@pwojnicz.pl> (https://pwojnicz.pl)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "babelify": "^8.0.0",
+    "browser-sync": "^2.24.1",
+    "browserify": "^16.2.2",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-file-include": "^2.0.1",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^4.0.1",
+    "gulp-sizereport": "^1.2.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {}
+}

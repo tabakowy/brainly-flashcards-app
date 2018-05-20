@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fishcards</title>
+<link rel="icon" type="image/x-icon" href="https://styleguide.brainly.com/images/favicons/brainly/favicon-0c2222f36b.ico">
+<link rel="icon" sizes="192x192" href="https://styleguide.brainly.com/images/favicons/brainly/favicon-hd-0865c7f19f.png">
+<meta name="theme-color" content="#fbe4b5" />
+<link rel="stylesheet" href="https://styleguide.brainly.com/134.2.1/style-guide.css">
+<link rel="stylesheet" href="assets/main.min.css">
+<script defer src="assets/bundle.min.js"></script>
+
+<div class="layout">
+  <header class="sg-header">
+    <div class="sg-header__container sg-header__container--light">
+      <div class="sg-header__content">
+        <div class="sg-header__left">
+          <a href="#" class="js-restart sg-home-button" title="Restart">
+            <img class="sg-home-button__logo-small" src="https://styleguide.brainly.com/images/logos/brainly-mobile-426ef8718f.svg">
+            <img class="sg-home-button__logo-big" src="https://styleguide.brainly.com/images/logos/brainly-761d75d6ea.svg">
+          </a>
+          <div class="sg-vertical-separator sg-vertical-separator--large"></div>
+        </div>
+        <div class="sg-header__middle">
+          <h1 class="sg-text-bit sg-text-bit--small sg-text-bit--dark sg-text-bit--not-responsive">Flashcards</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="flashcards">
+    <div class="flashcards__container flashcards__container--intro">
+      <section class="flashcards__intro">
+  <div class="container">
+    <div class="sg-content-box">
+
+      <div class="sg-content-box__title sg-content-box__title--spaced-top-xlarge">
+        <h2 class="sg-text-bit sg-text-bit--light">
+          Psst, want some flashcards?
+        </h2>
+      </div>
+
+      <div class="sg-content-box__content sg-content-box__content--spaced-top-xlarge">
+        <div class="sg-text sg-text--light sg-text--standout">
+          10 questions. Poland. Can you handle it?
+        </div>
+      </div>
+
+      <div class="sg-content-box__actions sg-content-box__actions--spaced-top-xlarge">
+        <button class="js-start sg-button-primary sg-button-primary--dark">
+          Let's get started!
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+      <section class="flashcards__cards cards">
+  <div class="container">
+    <div class="card sg-card sg-card--padding-small sg-card--centered">
+
+      <div class="sg-card__hole">
+        <div class="js-card-progressbar card__progress sg-badge sg-badge--blue-secondary-light sg-badge--large">
+          <div class="card__progress_value sg-text sg-text--blue sg-text--emphasised">
+            <span class="js-card-progress-value"></span> cards
+          </div>
+        </div>
+      </div>
+
+      <div class="sg-card__hole">
+        <span class="js-card-question sg-text sg-text--headline sg-text--regular"></span>
+      </div>
+
+      <div class="sg-card__hole">
+        <button class="js-card-answer sg-button-primary sg-button-primary--dark sg-button-primary--full-width card__action"></button>
+        <button class="js-card-answer sg-button-primary sg-button-primary--dark sg-button-primary--full-width card__action"></button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+      <section class="flashcards__results js-results">
+  <div class="container sg-text--to-center">
+
+    <svg class="sg-icon sg-icon--x24">
+      <use xlink:href="#icon-heart"></use>
+    </svg>
+
+    <h1 class="sg-header-primary sg-header-primary--light">You made it!</h1>
+
+    <div class="score sg-text sg-text--light sg-text--standout">
+      You've answered <span class="sg-text--emphasised js-questions-count">5</span> questions with <span class="sg-text--emphasised js-results-mistakes"></span>
+    </div>
+
+    <div class="sg-horizontal-separator sg-horizontal-separator--spaced"></div>
+
+    <button class="js-restart sg-button-primary sg-button-primary--dark sg-button-primary--full-width">
+      One more time!
+    </button>
+
+  </div>
+</section>
+
+    </div>
+  </main>
+
+  <footer class="sg-footer">
+    <div class="sg-footer__container">
+      <div class="sg-text sg-text--obscure sg-text--light sg-text--emphasised sg-text--to-center">Made on Earth by <a href="https://pwojnicz.pl" class="sg-link sg-link--light">Paweł Wojnicz</a></div>
+    </div>
+  </footer>
+</div>
+
+<script src="https://styleguide.brainly.com/images/icons-1b40deaa8d.js"></script>

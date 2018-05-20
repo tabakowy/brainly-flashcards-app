@@ -1,0 +1,56 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background 1s ease-in-out;
+
+  &--cards {
+    background: #57b2f8;
+  }
+
+  &--results {
+    background: #53cf92;
+  }
+}
+
+.flashcards {
+  overflow-x: hidden;
+
+  // Make it slide!
+  &__container {
+    width: 300%;
+    display: flex;
+    position: relative;
+    transition: left 1s cubic-bezier(.75,-0.65,.35,1.45);
+
+    &--intro {
+      left: 0;
+    }
+
+    &--cards {
+      left: -100%;
+    }
+
+    &--results {
+      left: -200%;
+    }
+  }
+
+  &__intro,
+  &__cards,
+  &__results {
+    width: calc(100% / 3);
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  padding: 1rem;
+  margin: auto;
+}
