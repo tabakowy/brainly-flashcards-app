@@ -84,7 +84,8 @@ function initCards() {
     progress.style.width = `${currentProgress}%`
   }
 
-  function handleAnswer(userAnswer) {
+  function handleAnswer(e) {
+    const userAnswer = e.target.textContent
     const current = data.shift()
     const correct = current.answers.find(t => t.correct).answer
 
@@ -95,18 +96,18 @@ function initCards() {
         card.classList.remove('card--correct')
         updateCard()
       }, { once: true })
-
-      return
     }
 
-    mistakes++
-    data.push(current)
-    card.classList.add('card--incorrect')
+    else {
+      mistakes++
+      data.push(current)
+      card.classList.add('card--incorrect')
 
-    card.addEventListener('animationend', (e) => {
-      card.classList.remove('card--incorrect')
-      updateCard()
-    }, { once: true })
+      card.addEventListener('animationend', (e) => {
+        card.classList.remove('card--incorrect')
+        updateCard()
+      }, { once: true })
+    }
   }
 
   function showResluts() {
@@ -120,6 +121,11 @@ function initCards() {
     layout.classList.add('layout--results')
     sections.classList.remove('flashcards__container--cards')
     sections.classList.add('flashcards__container--results')
+
+    // Handle event listeners to be duplicated
+    buttons.forEach(button =>
+      button.removeEventListener('click', handleAnswer)
+    )
   }
 
   function updateCard() {
@@ -128,10 +134,6 @@ function initCards() {
   }
 
   buttons.forEach(button =>
-    button.addEventListener('click', (e) => {
-      handleAnswer(e.target.textContent)
-    }
-  ), { once: true })
+    button.addEventListener('click', handleAnswer)
+  )
 }
-
-// BUG: Firefox 60.0 on GNU/Linux dosen't support { once: true } setting?
